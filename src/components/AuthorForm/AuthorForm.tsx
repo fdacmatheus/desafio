@@ -13,7 +13,6 @@ const AuthorForm: React.FC<AuthorFormProps> = ({ onSave, initialData = { name: '
   const [authors] = useLocalStorage<Author[]>('authors', []);
 
   const generateId = () => {
-    // Gera um ID que é um número maior que todos os IDs atuais.
     const maxId = authors.reduce((max, author) => Math.max(max, parseInt(author.id || '0')), 0);
     return (maxId + 1).toString();
   };
@@ -36,7 +35,6 @@ const AuthorForm: React.FC<AuthorFormProps> = ({ onSave, initialData = { name: '
       initialValues={initialData}
       validate={validate}
       onSubmit={(values, actions) => {
-        // Se o autor já tem um ID, mantemos esse ID. Se não, geramos um novo.
         const authorToSave = initialData.id ? values : { ...values, id: generateId() };
         onSave(authorToSave);
         actions.setSubmitting(false);
