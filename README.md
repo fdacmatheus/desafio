@@ -46,21 +46,21 @@ Este projeto foi desenvolvido como parte do desafio de front-end proposto pela C
 - index.tsx: Ponto de entrada do React.
 
 ## Instalação e Execução 🚀
-c Clone o repositório:
+### Clone o repositório:
 
 ## bash
-Copy code
-git clone https://github.com/fdacmatheus/desafio
+### Copy code
+### git clone https://github.com/fdacmatheus/desafio
 
 ## Instale as dependências:
 
 ## bash
-Copy code
-npm install
-Inicie o servidor de desenvolvimento:
+### Copy code
+### npm install
+### Inicie o servidor de desenvolvimento:
 
 ## bash
-Copy code
-npm start
-Acesse http://localhost:3000 no navegador.# desafio
+### Copy code
+### npm start
+### Acesse http://localhost:3000 no navegador.
 
