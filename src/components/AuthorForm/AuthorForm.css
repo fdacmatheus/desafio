@@ -1,0 +1,28 @@
+Form  {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   padding: 32px;
+}
+
+Form input  {
+    padding: 8px 8px;
+ }
+
+.button-save {
+    display: flex;
+    border:  none;
+    align-self: center;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+    background-color: #293371;
+    padding: 8px 32px;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.button-save:hover { 
+    background-color: #293371e3;
+}

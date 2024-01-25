@@ -1,0 +1,36 @@
+ header {
+    background-color: #fff;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+    justify-content: center;
+    color: #293371;
+    box-shadow: 0 2px 6px rgba(0,0,0,.2);
+ }
+ .logo  {
+    width: 150px;
+ }
+ 
+ .header-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    align-items: center;
+ }
+
+ .nav-container {
+   display: flex;
+   justify-content: center;
+   padding-top: 16px;
+ }
+
+
+ .nav-container  a {
+   margin-left: 16px;
+   color: #4b4b4b;
+ }
+ .nav-container  a:hover {
+   text-decoration: underline;
+ }
