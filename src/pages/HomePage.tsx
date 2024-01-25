@@ -1,8 +1,6 @@
 // HomePage.tsx
-import React from 'react';
 import './Pages.css';
 import { Link } from 'react-router-dom';
-import BooksTable from '../components/BooksTable/BooksTable';
 
 const HomePage = () =>{
   return (

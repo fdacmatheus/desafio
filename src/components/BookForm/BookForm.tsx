@@ -65,7 +65,7 @@ const BookForm: React.FC<BookFormProps> = ({ onSave, initialData = { name: '', a
                         </Field>
                         <ErrorMessage name="authorId" component="div" />
                     </div>
-                    <label className='number-pages' htmlFor="pages">Numero de paginas</label>
+                    <label className='number-pages' htmlFor="pages">Numero de paginas: </label>
                     <Field type="number" name="pages" placeholder="Número de Páginas" />
                     <ErrorMessage name="pages" component="div" />
 

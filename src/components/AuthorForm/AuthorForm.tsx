@@ -53,7 +53,7 @@ const AuthorForm: React.FC<AuthorFormProps> = ({ onSave, initialData = { name: '
 
           <button className='button-save' type="submit" disabled={isSubmitting}>
             Salvar
-          </button>
+          </button> 
         </Form>
       )}
     </Formik>
