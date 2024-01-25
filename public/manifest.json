@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "CRUD Biblioteca",
+  "name": "Um CRUD para biblioteca",
   "icons": [
     {
       "src": "favicon.ico",
