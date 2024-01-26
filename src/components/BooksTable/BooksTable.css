@@ -27,7 +27,10 @@ tr:hover {
   cursor: pointer;
   color: red;
 }
-
+.details-icon {
+  cursor: pointer;
+  color: #293371;
+}
 .container-modal-livro h2 {
   color: #293371;
 }

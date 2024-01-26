@@ -4,7 +4,6 @@ import Modal from '../Modal/Modal';
 import { TrashIcon, EyeOpenIcon } from '@radix-ui/react-icons';
 import './AuthorsTable.css';
 
-
 interface AuthorsTableProps {
   authors: Author[];
   onDelete: (authorId: string) => void;
@@ -36,10 +35,7 @@ const AuthorsTable: React.FC<AuthorsTableProps> = ({ authors, onDelete }) => {
               <td>{author.email || 'N/A'}</td>
               <td>
                 <EyeOpenIcon className="details-icon" onClick={() => handleDetailsClick(author)} />
-                <TrashIcon
-  className="delete-icon"
-  onClick={() => author.id ? onDelete(author.id) : null}
-/>
+                <TrashIcon className="delete-icon" onClick={() => author.id ? onDelete(author.id) : null} />
               </td>
             </tr>
           ))}

@@ -43,10 +43,8 @@ const BooksTable: React.FC<BooksTableProps> = ({ books, authors, onDelete }) => 
               <td>{getAuthorNameById(book.authorId)}</td> 
               <td>{book.pages || 'N/A'}</td>
               <td>
-                <EyeOpenIcon className="view-icon" onClick={() => handleDetailsClick(book)} />
-                <TrashIcon
-                  className="delete-icon"
-                  onClick={() => book.id && onDelete(book.id)} 
+                <EyeOpenIcon className="details-icon" onClick={() => handleDetailsClick(book)} />
+                <TrashIcon className="delete-icon" onClick={() => book.id && onDelete(book.id)} 
                 />
               </td>
             </tr>
