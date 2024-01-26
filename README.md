@@ -27,7 +27,7 @@ Este projeto foi desenvolvido como parte do desafio de front-end proposto pela C
 5. Local Storage: Armazenamento de dados no navegador.
 6. TypeScript: Superset de JavaScript para adicionar tipagem e melhorar a qualidade do código.
 
-## Estrutura do Projeto 🏗️
+## Estrutura do Projeto 
 
 /src
 /components: Componentes reutilizáveis.
@@ -60,7 +60,7 @@ Este projeto foi desenvolvido como parte do desafio de front-end proposto pela C
 ### Inicie o servidor de desenvolvimento:
 
 ## bash
-### Copy code
-### npm start
-### Acesse http://localhost:3000 no navegador.
+#### Copy code
+#### npm start
+#### Acesse http://localhost:3000 no navegador.
 
