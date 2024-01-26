@@ -22,9 +22,12 @@ const BooksPage = () => {
     setIsBookModalOpen(false);
   };
  
-  const handleDeleteBook = (bookId: string) => { 
-    const updatedBooks = books.filter(book => book.id !== bookId);
-    setBooksInStorage(updatedBooks); 
+  const handleDeleteBook = (bookId: string) => {
+    const isConfirmed = window.confirm("Tem certeza que deseja excluir este livro?");
+    if (isConfirmed) {
+      const updatedBooks = books.filter(book => book.id !== bookId);
+      setBooksInStorage(updatedBooks); 
+    }
   };
 
   return (

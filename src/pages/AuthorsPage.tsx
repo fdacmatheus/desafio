@@ -15,7 +15,10 @@ const AuthorsPage = () => {
   };
 
   const handleDeleteAuthor = (authorId: string) => {
-    setAuthors(authors.filter(author => author.id !== authorId));
+    const isConfirmed = window.confirm("Tem certeza que deseja excluir este Autor?");
+    if(isConfirmed) {
+      setAuthors(authors.filter(author => author.id !== authorId));
+    }
   };
 
   return (
