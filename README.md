@@ -1,6 +1,6 @@
 # Desafio Contato Seguro - Biblioteca Virtual 📚🖥️
 
-Este projeto foi desenvolvido como parte do desafio de front-end proposto pela Contato Seguro. O principal objetivo do projeto é a criação de um sistema de gerenciamento de livros e autores, implementando funcionalidades de CRUD (Create, Read, Update, Delete) com uma interface interativa.
+Este projeto foi desenvolvido como parte do desafio de front-end proposto pela Contato Seguro. O principal objetivo do projeto é a criação de um sistema de gerenciamento de livros e autores, implementando funcionalidades de CRUD.
 
 ## Funcionalidades 🚀
 
@@ -29,19 +29,18 @@ Este projeto foi desenvolvido como parte do desafio de front-end proposto pela C
 
 ## Estrutura do Projeto 
 
-/src
-/components: Componentes reutilizáveis.
+- components: Componentes reutilizáveis.
 - BooksTable: Tabela de listagem de livros.
 - AuthorsTable: Tabela de listagem de autores.
 - Modal: Componente modal para formulários.
 - BookForm: Formulário para adicionar/editar livros.
 - AuthorForm: Formulário para adicionar/editar autores.
-/models: Modelos de dados para livros e autores.
-/pages: Páginas da aplicação.
+- models: Modelos de dados para livros e autores.
+- pages: Páginas da aplicação.
 - HomePage: Página inicial com navegação.
 - BooksPage: Página de gerenciamento de livros.
 - AuthorsPage: Página de gerenciamento de autores.
-/partials: Componentes parciais como cabeçalho e rodapé.
+- partials: Componentes parciais como cabeçalho e rodapé.
 - App.tsx: Componente principal da aplicação.
 - index.tsx: Ponto de entrada do React.
 
