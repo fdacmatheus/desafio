@@ -1,17 +1,24 @@
 import React, { useState } from 'react';
 import { Book } from '../../models/Book';
+import { Author } from '../../models/Author';
 import Modal from '../Modal/Modal';
 import { TrashIcon, EyeOpenIcon } from '@radix-ui/react-icons';
 import './BooksTable.css';
 
 interface BooksTableProps {
   books: Book[];
+  authors: Author[];
   onDelete: (bookId: string) => void; 
 }
 
-const BooksTable: React.FC<BooksTableProps> = ({ books, onDelete }) => {
+const BooksTable: React.FC<BooksTableProps> = ({ books, authors, onDelete }) => {
   const [selectedBook, setSelectedBook] = useState<Book | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const getAuthorNameById = (authorId: string) => {
+    const author = authors.find(a => a.id === authorId);
+    return author ? author.name : 'Autor Desconhecido';
+  };
 
   const handleDetailsClick = (book: Book) => {
     setSelectedBook(book);
@@ -33,7 +40,7 @@ const BooksTable: React.FC<BooksTableProps> = ({ books, onDelete }) => {
           {books.map((book) => (
             <tr key={book.id}>
               <td>{book.name}</td>
-              <td>{book.authorId}</td> 
+              <td>{getAuthorNameById(book.authorId)}</td> 
               <td>{book.pages || 'N/A'}</td>
               <td>
                 <EyeOpenIcon className="view-icon" onClick={() => handleDetailsClick(book)} />
